@@ -327,6 +327,10 @@ footer a:hover {
   .content-container .picture-container {
     min-width: var(--lg-xl-size-picture);
     min-height: var(--lg-xl-size-picture);
+    animation-name: slideIn-lg-xl-right;
+    animation-fill-mode: both;
+    animation-duration: 800ms;
+    animation-delay: 400ms;
   }
 
   .content-container .picture-container .circle {
@@ -351,33 +355,45 @@ footer a:hover {
 
   .content-container .bio-container {
     text-align: initial;
-    animation-name: slideIn-lg-xl;
+    animation-name: slideIn-lg-xl-left;
   }
 
   .content-container .bio-container h1 {
     font-size: 6rem;
-    animation-name: slideIn-lg-xl;
+    animation-name: slideIn-lg-xl-left;
   }
 
   .content-container .bio-container p {
     font-size: 1.5rem;
-    animation-name: slideIn-lg-xl;
+    animation-name: slideIn-lg-xl-left;
   }
 
   .content-container .bio-container span {
     font-size: 1.2rem;
-    animation-name: slideIn-lg-xl;
+    animation-name: slideIn-lg-xl-left;
   }
 }
 
-@keyframes slideIn-lg-xl {
+@keyframes slideIn-lg-xl-left {
   from {
-    margin-left: 50px;
+    transform: translateX(50px);
     opacity: 0;
   }
 
   to {
-    margin-left: 0;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn-lg-xl-right {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: none;
     opacity: 1;
   }
 }
