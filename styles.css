@@ -92,6 +92,7 @@ body {
   animation-fill-mode: both;
   animation-duration: 400ms;
   animation-delay: 200ms;
+  will-change: opacity;
 }
 
 .content-container .picture-container .picture {
@@ -389,11 +390,13 @@ footer a:hover {
 }
 
 @keyframes fadeIn {
-  0% {
+  from {
+    visibility: hidden;
     opacity: 0;
   }
 
-  100% {
+  to {
+    visibility: visible;
     opacity: 1;
   }
 }
