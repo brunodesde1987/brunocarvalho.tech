@@ -220,6 +220,10 @@ footer a:nth-child(4) img {
   animation-delay: 2s;
 }
 
+footer a:nth-child(5) img {
+  animation-delay: 2.2s;
+}
+
 footer a img {
   width: 32px;
   height: 32px;
@@ -379,12 +383,12 @@ footer a:hover {
 
 @keyframes slideIn-sm-md {
   from {
-    padding-bottom: 50px;
+    transform: translateY(50px);
     opacity: 0;
   }
 
   to {
-    padding-bottom: 0;
+    transform: none;
     opacity: 1;
   }
 }
