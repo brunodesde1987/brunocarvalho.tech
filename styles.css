@@ -231,6 +231,7 @@ footer a img {
 
 footer a:hover {
   opacity: 1;
+  transform: translateY(-3px);
 }
 
 @media screen and (min-width: 320px){
