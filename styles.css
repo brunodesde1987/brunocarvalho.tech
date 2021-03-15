@@ -88,11 +88,6 @@ body {
   background-color: var(--color-yellow-400);
   mix-blend-mode: difference;
   border-radius: 9999px;
-  animation-name: fadeIn;
-  animation-fill-mode: both;
-  animation-duration: 400ms;
-  animation-delay: 200ms;
-  will-change: opacity;
 }
 
 .content-container .picture-container .picture {
@@ -109,11 +104,6 @@ body {
   background-size: cover;
   border-radius: 9999px;
   transition: .8s linear;
-  opacity: 1;
-  animation-name: fadeIn;
-  animation-fill-mode: both;
-  animation-duration: 800ms;
-  animation-delay: 400ms;
 }
 
 .content-container .picture-container .picture:after {
@@ -269,16 +259,27 @@ footer a:hover {
   .content-container .picture-container .circle {
     width: var(--sm-md-size-picture);
     height: var(--sm-md-size-picture);
+    animation-name: fadeIn;
+    animation-fill-mode: both;
+    animation-duration: 600ms;
+    animation-delay: 400ms;
+    will-change: opacity;
   }
 
   .content-container .picture-container .picture {
     width: var(--sm-md-size-picture);
     height: var(--sm-md-size-picture);
+
   }
 
   .content-container .picture-container .picture:before {
     background: url(images/brunocarvalho-color-300.png);
     background-repeat: no-repeat;
+    animation-name: fadeIn;
+    animation-fill-mode: both;
+    animation-duration: 800ms;
+    animation-delay: 600ms;
+    will-change: opacity;
   }
 
   .content-container .picture-container .picture:after {
@@ -327,15 +328,16 @@ footer a:hover {
   .content-container .picture-container {
     min-width: var(--lg-xl-size-picture);
     min-height: var(--lg-xl-size-picture);
-    animation-name: slideIn-lg-xl-right;
-    animation-fill-mode: both;
-    animation-duration: 800ms;
-    animation-delay: 400ms;
   }
 
   .content-container .picture-container .circle {
     width: var(--lg-xl-size-picture);
     height: var(--lg-xl-size-picture);
+    animation-name: slideIn-lg-xl-right;
+    animation-fill-mode: both;
+    animation-duration: 600ms;
+    animation-delay: 400ms;
+    will-change: opacity;
   }
 
   .content-container .picture-container .picture {
@@ -346,6 +348,11 @@ footer a:hover {
   .content-container .picture-container .picture:before {
     background: url(images/brunocarvalho-color-400.png);
     background-repeat: no-repeat;
+    animation-name: slideIn-lg-xl-right;
+    animation-fill-mode: both;
+    animation-duration: 600ms;
+    animation-delay: 400ms;
+    will-change: opacity;
   }
 
   .content-container .picture-container .picture:after {
@@ -399,24 +406,24 @@ footer a:hover {
 }
 
 @keyframes slideIn-sm-md {
-  from {
+  0% {
     transform: translateY(50px);
     opacity: 0;
   }
 
-  to {
+  100% {
     transform: none;
     opacity: 1;
   }
 }
 
 @keyframes fadeIn {
-  from {
+  0% {
     visibility: hidden;
     opacity: 0;
   }
 
-  to {
+  100% {
     visibility: visible;
     opacity: 1;
   }
