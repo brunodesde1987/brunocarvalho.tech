@@ -36,12 +36,7 @@
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#ffff00" />
     <meta name="msapplication-TileColor" content="#2b5797" />
     <meta name="theme-color" content="#ffffff" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto+Slab:wght@300&display=swap"
-      rel="stylesheet"
-    />
     <!-- Facebook Pixel Code -->
     <script>
       !(function (f, b, e, v, n, t, s) {
@@ -54,7 +49,7 @@
         if (!f._fbq) f._fbq = n;
         n.push = n;
         n.loaded = !0;
-        n.version = "2.0";
+        n.version = '2.0';
         n.queue = [];
         t = b.createElement(e);
         t.async = !0;
@@ -64,11 +59,11 @@
       })(
         window,
         document,
-        "script",
-        "https://connect.facebook.net/en_US/fbevents.js"
+        'script',
+        'https://connect.facebook.net/en_US/fbevents.js'
       );
-      fbq("init", "344605359659721");
-      fbq("track", "PageView");
+      fbq('init', '344605359659721');
+      fbq('track', 'PageView');
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -80,9 +75,9 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
+      gtag('js', new Date());
 
-      gtag("config", "G-08PS72KZ96");
+      gtag('config', 'G-08PS72KZ96');
     </script>
     <noscript
       ><img
@@ -100,7 +95,6 @@
           <div class="circle"></div>
           <div class="picture"></div>
         </section>
-
         <section class="bio-container">
           <h1>Bruno <br />Carvalho</h1>
           <p>Frontend Engineer</p>
@@ -150,13 +144,27 @@
         </a>
       </footer>
     </div>
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: { families: ['Poppins:600|Roboto+Slab:300'] },
+      };
+      (function () {
+        const fonts = document.createElement('script');
+        fonts.src =
+          'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+        fonts.type = 'text/javascript';
+        fonts.async = 'true';
+        const scriptTag = document.getElementsByTagName('script')[0];
+        scriptTag.parentNode.insertBefore(fonts, scriptTag);
+      })();
+    </script>
     <script>
       console.log(
-        "%c\nOlá jovem! 😉\n\nObrigado pela visita e fique à vontade!\nSe quiser sugerir alguma melhoria, correção, tirar alguma dúvida\nou apenas trocar ideia, entre em contato comigo através do WhatsApp ou Telegram:\n",
-        "background: #353536;color: #ffff00"
+        '%c\nOlá jovem! 😉\n\nObrigado pela visita e fique à vontade!\nSe quiser sugerir alguma melhoria, correção, tirar alguma dúvida\nou apenas trocar ideia, entre em contato comigo através do WhatsApp ou Telegram:\n',
+        'background: #353536;color: #ffff00'
       );
-      console.log("%chttps://wa.me/5531986610770", "color: #25D366");
-      console.log("%chttps://t.me/brunodesde1987\n", "color: #26A5E4");
+      console.log('%chttps://wa.me/5531986610770', 'color: #25D366');
+      console.log('%chttps://t.me/brunodesde1987\n', 'color: #26A5E4');
     </script>
   </body>
 </html>
