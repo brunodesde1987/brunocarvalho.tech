@@ -52,7 +52,7 @@ body {
   background-image: url(images/rockywall.png);
   background-repeat: repeat;
   background-blend-mode: multiply;
-  font-family: 'Poppins', 'Arial', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-display: swap;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
