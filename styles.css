@@ -6,7 +6,7 @@
   --color-gray-700: #353536;
   --color-yellow-400: #ffff00;
   --color-yellow-600: #858520;
-  --transition: all .4s ease-in-out;
+  --transition: all 0.4s ease-in-out;
   --sm-md-size-picture: 300px;
   --lg-xl-size-picture: 400px;
 }
@@ -23,11 +23,24 @@
   background: var(--color-yellow-400);
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
-html, body, div, span, h1, p, a, img, figure, figcaption, footer, header, section {
+html,
+body,
+div,
+span,
+h1,
+p,
+a,
+img,
+figure,
+figcaption,
+footer,
+header,
+section {
   margin: 0;
   padding: 0;
   border: 0;
@@ -39,7 +52,7 @@ body {
   background-image: url(images/rockywall.png);
   background-repeat: repeat;
   background-blend-mode: multiply;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', 'Arial', sans-serif;
   font-display: swap;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -52,7 +65,6 @@ body {
   height: inherit;
   padding: 24px;
 }
-
 
 .content-container {
   display: flex;
@@ -71,7 +83,9 @@ body {
   -webkit-transition: var(--transition);
 }
 
-.content-container .picture-container:is(:hover, :focus, :active) .picture:before {
+.content-container
+  .picture-container:is(:hover, :focus, :active)
+  .picture:before {
   opacity: 0.5;
 }
 
@@ -103,7 +117,7 @@ body {
   mix-blend-mode: luminosity;
   background-size: cover;
   border-radius: 9999px;
-  transition: .8s linear;
+  transition: 0.8s linear;
 }
 
 .content-container .picture-container .picture:after {
@@ -114,7 +128,7 @@ body {
   mix-blend-mode: darken;
   background-size: cover;
   border-radius: 9999px;
-  transition: .6s linear;
+  transition: 0.6s linear;
   opacity: 0;
 }
 
@@ -131,7 +145,6 @@ body {
   animation-duration: 800ms;
   animation-delay: 400ms;
 }
-
 
 .content-container .bio-container h1 {
   color: var(--color-gray-300);
@@ -224,12 +237,12 @@ footer a:hover {
   transform: translateY(-3px);
 }
 
-@media screen and (min-width: 320px){
+@media screen and (min-width: 320px) {
   .content-container {
     flex-direction: column;
     margin-bottom: 32px;
   }
-  
+
   .content-container .bio-container {
     text-align: center;
     animation-name: slideIn-sm-md;
@@ -269,7 +282,6 @@ footer a:hover {
   .content-container .picture-container .picture {
     width: var(--sm-md-size-picture);
     height: var(--sm-md-size-picture);
-
   }
 
   .content-container .picture-container .picture:before {
