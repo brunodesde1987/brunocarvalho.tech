@@ -142,8 +142,8 @@ body {
   -webkit-transition: var(--transition);
   letter-spacing: 0.5px;
   animation-fill-mode: both;
-  animation-duration: 800ms;
-  animation-delay: 400ms;
+  animation-duration: 600ms;
+  animation-delay: 200ms;
 }
 
 .content-container .bio-container h1 {
@@ -155,8 +155,8 @@ body {
   -moz-transition: var(--transition);
   -webkit-transition: var(--transition);
   animation-fill-mode: both;
-  animation-duration: 800ms;
-  animation-delay: 600ms;
+  animation-duration: 600ms;
+  animation-delay: 400ms;
 }
 
 .content-container .bio-container p {
@@ -169,8 +169,8 @@ body {
   -moz-transition: var(--transition);
   -webkit-transition: var(--transition);
   animation-fill-mode: both;
-  animation-duration: 800ms;
-  animation-delay: 700ms;
+  animation-duration: 600ms;
+  animation-delay: 500ms;
 }
 
 .content-container .bio-container span {
@@ -179,8 +179,8 @@ body {
   border-radius: 3px;
   transition: var(--transition);
   animation-fill-mode: both;
-  animation-duration: 800ms;
-  animation-delay: 800ms;
+  animation-duration: 600ms;
+  animation-delay: 600ms;
 }
 
 .content-container .bio-container span:hover {
@@ -204,27 +204,27 @@ footer a {
 footer a img {
   animation-name: fadeInSocial;
   animation-fill-mode: both;
-  animation-duration: 200ms;
+  animation-duration: 100ms;
 }
 
 footer a:nth-child(1) img {
-  animation-delay: 1.4s;
+  animation-delay: 800ms;
 }
 
 footer a:nth-child(2) img {
-  animation-delay: 1.6s;
+  animation-delay: 1s;
 }
 
 footer a:nth-child(3) img {
-  animation-delay: 1.8s;
+  animation-delay: 1.2s;
 }
 
 footer a:nth-child(4) img {
-  animation-delay: 2s;
+  animation-delay: 1.4s;
 }
 
 footer a:nth-child(5) img {
-  animation-delay: 2.2s;
+  animation-delay: 1.6s;
 }
 
 footer a img {
@@ -274,8 +274,8 @@ footer a:hover {
     height: var(--sm-md-size-picture);
     animation-name: fadeIn;
     animation-fill-mode: both;
-    animation-duration: 600ms;
-    animation-delay: 400ms;
+    animation-duration: 400ms;
+    animation-delay: 200ms;
     will-change: opacity;
   }
 
@@ -289,8 +289,8 @@ footer a:hover {
     background-repeat: no-repeat;
     animation-name: fadeIn;
     animation-fill-mode: both;
-    animation-duration: 800ms;
-    animation-delay: 600ms;
+    animation-duration: 600ms;
+    animation-delay: 300ms;
     will-change: opacity;
   }
 
@@ -347,8 +347,8 @@ footer a:hover {
     height: var(--lg-xl-size-picture);
     animation-name: slideIn-lg-xl-right;
     animation-fill-mode: both;
-    animation-duration: 600ms;
-    animation-delay: 400ms;
+    animation-duration: 300ms;
+    animation-delay: 200ms;
     will-change: opacity;
   }
 
@@ -362,8 +362,8 @@ footer a:hover {
     background-repeat: no-repeat;
     animation-name: slideIn-lg-xl-right;
     animation-fill-mode: both;
-    animation-duration: 600ms;
-    animation-delay: 400ms;
+    animation-duration: 300ms;
+    animation-delay: 200ms;
     will-change: opacity;
   }
 
