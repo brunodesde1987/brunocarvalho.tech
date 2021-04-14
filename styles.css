@@ -204,27 +204,8 @@ footer a {
 footer a img {
   animation-name: fadeInSocial;
   animation-fill-mode: both;
-  animation-duration: 100ms;
-}
-
-footer a:nth-child(1) img {
+  animation-duration: 600ms;
   animation-delay: 800ms;
-}
-
-footer a:nth-child(2) img {
-  animation-delay: 1s;
-}
-
-footer a:nth-child(3) img {
-  animation-delay: 1.2s;
-}
-
-footer a:nth-child(4) img {
-  animation-delay: 1.4s;
-}
-
-footer a:nth-child(5) img {
-  animation-delay: 1.6s;
 }
 
 footer a img {
@@ -443,11 +424,13 @@ footer a:hover {
 
 @keyframes fadeInSocial {
   0% {
+    opacity: 0;
     visibility: hidden;
     transform: translateY(6px);
   }
 
   100% {
+    opacity: 1;
     visibility: visible;
     transform: none;
   }
