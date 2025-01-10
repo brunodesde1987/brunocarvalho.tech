@@ -51,7 +51,7 @@ body {
   background-color: var(--color-gray-700);
   background-repeat: repeat;
   background-blend-mode: multiply;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Oxygen', sans-serif;
   font-display: swap;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -167,7 +167,7 @@ body {
 .content-container .bio-container p {
   font-family: 'Roboto Slab', serif;
   color: var(--color-gray-400);
-  font-weight: 300;
+  font-weight: 400;
   line-height: 2;
   transition: var(--transition);
   -o-transition: var(--transition);
